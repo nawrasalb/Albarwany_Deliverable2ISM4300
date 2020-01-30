@@ -23,57 +23,61 @@ namespace Albarwany_Deliverable2ISM4300
                 decimal x = decimal.Parse(input);
 
                 //This if/else if statement is used to test the users input and display a letter grade. 
-                if (x >= 98)
+                if ((x >= 98) && (x <=100)) 
                 {
                     Console.WriteLine("Course Grade: A+");
                 }
-                else if (x >= 92)
+                else if ((x >= 92) && (x <= 97))
                 {
                     Console.WriteLine("Course Grade: A");
                 }
-                else if (x >= 90)
+                else if ((x >= 90) && (x <=91))
                 {
                     Console.WriteLine("Course Grade: A-");
                 }
-                else if (x >= 88)
+                else if ((x >= 88) && (x<=89))
                 {
                     Console.WriteLine("Course Grade: B+");
                 }
-                else if (x >= 82)
+                else if ((x >= 82) && (x<=87))
                 {
                     Console.WriteLine("Course Grade: B");
                 }
-                else if (x >= 80)
+                else if ((x >= 80) && (x <=81))
                 {
                     Console.WriteLine("Course Grade: B-");
                 }
-                else if (x >= 78)
+                else if ((x >= 78) && (x <=79))
                 {
                     Console.WriteLine("Course Grade: C+");
                 }
-                else if (x >= 72)
+                else if ((x >= 72) && (x<=77))
                 {
                     Console.WriteLine("Course Grade: C");
                 }
-                else if (x >= 70)
+                else if ((x >= 70) && (x<=71))
                 {
                     Console.WriteLine("Course Grade: C-");
                 }
-                else if (x >= 68)
+                else if ((x >= 68) && (x<=69))
                 {
                     Console.WriteLine("Course Grade: D+");
                 }
-                else if (x >= 62)
+                else if ((x >= 62) && (x<=67))
                 {
                     Console.WriteLine("Course Grade: D");
                 }
-                else if (x >= 60)
+                else if ((x >= 60) && (x<=61))
                 {
                     Console.WriteLine("Course Grade: D-");
                 }
-                else if (x < 60)
+                else if (x < 60) 
                 {
                     Console.WriteLine("Course Grade: F. You Fail!");
+                }
+                else
+                {
+                    Console.WriteLine("enter valid number");
                 }
             }// end of try 
             catch
