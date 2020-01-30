@@ -19,8 +19,10 @@ namespace Albarwany_Deliverable2ISM4300
                 // gather user input
                 string input = Console.ReadLine();
 
+                //this variable will store the value the user input. 
                 decimal x = decimal.Parse(input);
 
+                //This if/else if statement is used to test the users input and display a letter grade. 
                 if (x >= 98)
                 {
                     Console.WriteLine("Course Grade: A+");
@@ -76,7 +78,8 @@ namespace Albarwany_Deliverable2ISM4300
             }// end of try 
             catch
             {
-                Console.WriteLine("Please use an interger data type ");
+                // if user does not enter a decimal value a message displays asking the user to enter an integer
+                Console.WriteLine("Please use an integer data type ");
                 Console.ReadKey(true);
             } // end of catch 
         }
